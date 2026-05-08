@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dance Studio Radio — Mountain Home Ballroom</title>
+<style>
+  :root {
+    --bg: #0e0e12;
+    --panel: #1a1a22;
+    --accent: #d4a373;
+    --accent-bright: #e9c19c;
+    --text: #f4f1ea;
+    --muted: #8a8898;
+    --border: #2a2a35;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  header { margin-bottom: 48px; }
+  h1 {
+    font-size: 32px; letter-spacing: 2px; margin: 0 0 8px;
+    text-transform: uppercase; color: var(--text);
+  }
+  .tagline { color: var(--muted); margin: 0; font-size: 15px; }
+  h2 {
+    font-size: 13px; color: var(--accent); margin: 40px 0 12px;
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  p { color: #c8c4b8; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+  a:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); }
+  .credit-card {
+    background: var(--panel); border-radius: 12px; padding: 20px 24px;
+    margin-top: 12px; border: 1px solid var(--border);
+  }
+  .credit-card ul { margin: 8px 0 0; }
+  footer {
+    margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--border);
+    font-size: 13px; color: var(--muted); text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Dance Studio Radio</h1>
+    <p class="tagline">A music + practice tool for Mountain Home Ballroom dance studio.</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Dance Studio Radio is an in-house web app for ballroom dance instruction and practice.
+      It consolidates tempo-locked practice tracks, AI-generated music for every ballroom
+      style, schedule-based class sessions, and Spotify playlist playback into a single
+      tool used at the studio.
+    </p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>Pitch-preserving tempo shift so any track can be slowed or sped up while practicing</li>
+      <li>BPM-locked metronome for every ballroom dance category</li>
+      <li>Session scheduling for competitive rounds and social practice mixes</li>
+      <li>Spotify integration for streaming the studio's curated playlists</li>
+      <li>Per-style playlist mapping with smart auto-detection</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Powered by</h2>
+    <div class="credit-card">
+      <ul>
+        <li>
+          Music streaming and playlist data:
+          <a href="https://www.spotify.com" rel="noopener">Spotify</a>
+        </li>
+        <li>
+          Song tempo (BPM) data:
+          <a href="https://getsongbpm.com" rel="noopener">GetSongBPM</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Mountain Home Ballroom &middot; personal &amp; studio use
+  </footer>
+</body>
+</html>
